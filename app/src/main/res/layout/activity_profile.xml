@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="330dp">
+
+         <LinearLayout
+             android:background="#03a9f4"
+             android:layout_width="match_parent"
+             android:layout_height="280dp"
+             android:orientation="vertical">
+
+             <ImageView
+                 android:layout_marginTop="35dp"
+                 android:layout_gravity="center_horizontal"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/dummy_profile_pic_3" />
+             <EditText
+                 android:id="@+id/proName"
+                 android:layout_marginTop="10dp"
+                 android:layout_gravity="center_horizontal"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Your Name"
+                 android:textColor="#fff"
+                 android:textStyle="bold"
+                 android:textSize="21sp"
+                 />
+
+         </LinearLayout>
+
+         <android.support.v7.widget.CardView
+             android:layout_width="350dp"
+             android:layout_height="120dp"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="225dp"
+             android:layout_marginBottom="16dp"
+             android:layout_marginLeft="16dp"
+             android:layout_marginRight="16dp"
+             app:cardElevation="8dp"
+             app:cardCornerRadius="8dp">
+
+             <LinearLayout
+                 android:layout_margin="18dp"
+                 android:layout_gravity="center_horizontal|center_vertical"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="vertical"
+                 android:weightSum="6">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_horizontal"
+                     android:text="University Seat Number"
+                     android:textAlignment="center"
+                     android:textSize="16sp" />
+                 <TextView
+                     android:id="@+id/proUSN"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="4SUXXXXXXX"
+                     android:layout_gravity="center_horizontal"
+                     android:textAlignment="center"
+                     android:textSize="20sp"
+                     android:textColor="#03a9f4"
+                     android:textStyle="bold"/>
+
+             </LinearLayout>
+
+         </android.support.v7.widget.CardView>
+
+
+     </RelativeLayout>
+<LinearLayout
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_marginTop="45dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Branch:"
+            android:textSize="16sp"
+            android:layout_marginLeft="40dp"/>
+        <TextView
+            android:id="@+id/proBranch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XXX"
+            android:layout_marginLeft="70dp"
+            android:textSize="20sp"
+            android:textColor="#03a9f4"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Semester:"
+            android:textSize="16sp"
+            android:layout_marginLeft="40dp"/>
+        <TextView
+            android:id="@+id/proSem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XXX"
+            android:layout_marginLeft="55dp"
+            android:textSize="20sp"
+            android:textColor="#03a9f4"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+    <Button
+        android:id="@+id/buttonLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="150dp"
+        android:background="@drawable/profile_style"
+        android:fontFamily="sans-serif"
+        android:padding="8dp"
+        android:text="Logout"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

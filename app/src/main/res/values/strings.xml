@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Handy</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_home">Home</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="todo">TODO</string>
+    <string name="eduacad">EduAcad</string>
+</resources>

@@ -59,7 +59,6 @@ public class Registration extends AppCompatActivity {
         editTextConPass = (EditText)findViewById(R.id.conPassEditText);
         imageView = (ImageView) findViewById(R.id.proPicImage);
 
-        buttonLogReg = (Button)findViewById(R.id.buttonLoginReg);
 
         buttonLogReg.setOnClickListener(new View.OnClickListener() {
             @Override

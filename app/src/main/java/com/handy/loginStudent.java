@@ -88,7 +88,7 @@ public class loginStudent extends AppCompatActivity {
                         try{
                         if (password.equals(post.getPassword())) {
                             Toast.makeText(loginStudent.this, "Login Successful!", Toast.LENGTH_SHORT).show();
-                            sp.edit().putBoolean("logged", true).apply();
+                            sp.edit().putBoolean("logged", true);
 
                             Intent intent = new Intent(loginStudent.this, MainActivity.class);
                             startActivity(intent);

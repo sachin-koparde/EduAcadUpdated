@@ -60,12 +60,7 @@ public class Registration extends AppCompatActivity {
         imageView = (ImageView) findViewById(R.id.proPicImage);
 
 
-        buttonLogReg.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-               Login();
-            }
-        });
+
 
 
 

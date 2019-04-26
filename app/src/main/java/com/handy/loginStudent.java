@@ -120,7 +120,7 @@ public class loginStudent extends AppCompatActivity {
     }
 
     private void RegisterStudent() {
-        Intent intent = new Intent(this,Register_option.class);
+        Intent intent = new Intent(this,Registration.class);
         startActivity(intent);
         finish();
     }

@@ -18,6 +18,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -30,6 +31,7 @@ public class Registration extends AppCompatActivity {
     EditText editTextName, editTextUSN, editTextBranch, editTextSem, editTextEmail,editTextPhone,editTextPass,editTextConPass;
     String pass,conPass;
     ImageView imageView;
+    TextView logintext;
     private post post;
     static int PReqCode = 1;
     static int REQUESTCODE = 1;
@@ -59,7 +61,14 @@ public class Registration extends AppCompatActivity {
         editTextConPass = (EditText)findViewById(R.id.conPassEditText);
         imageView = (ImageView) findViewById(R.id.proPicImage);
 
+        logintext = (TextView)findViewById(R.id.textView2);
 
+        logintext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Login();
+            }
+        });
 
 
 
@@ -119,6 +128,8 @@ public class Registration extends AppCompatActivity {
 
 
     }
+
+
 
     private void Login() {
         Intent i = new Intent(this,loginStudent.class);

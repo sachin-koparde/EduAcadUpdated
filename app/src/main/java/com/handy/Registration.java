@@ -26,7 +26,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class Registration extends AppCompatActivity {
-    Button button;
+    Button button, buttonLogReg;
     EditText editTextName, editTextUSN, editTextBranch, editTextSem, editTextEmail,editTextPhone,editTextPass,editTextConPass;
     String pass,conPass;
     ImageView imageView;
@@ -58,6 +58,15 @@ public class Registration extends AppCompatActivity {
         editTextPass = (EditText)findViewById(R.id.passEditText);
         editTextConPass = (EditText)findViewById(R.id.conPassEditText);
         imageView = (ImageView) findViewById(R.id.proPicImage);
+
+        buttonLogReg = (Button)findViewById(R.id.buttonLoginReg);
+
+        buttonLogReg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               Login();
+            }
+        });
 
 
 
@@ -115,6 +124,12 @@ public class Registration extends AppCompatActivity {
         });
 
 
+    }
+
+    private void Login() {
+        Intent i = new Intent(this,loginStudent.class);
+        startActivity(i);
+        finish();
     }
 
     public Boolean validate(){

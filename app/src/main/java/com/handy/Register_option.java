@@ -5,9 +5,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 
 public class Register_option extends AppCompatActivity {
+
+    TextView loginLink;
 
     Button buttonStaff, buttonStudent;
 
@@ -18,6 +21,14 @@ public class Register_option extends AppCompatActivity {
 
         buttonStaff = (Button)findViewById(R.id.buttonRegStaff);
         buttonStudent = (Button)findViewById(R.id.buttonRegStudent);
+        loginLink = (TextView)findViewById(R.id.textViewLogin);
+
+        loginLink.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                login_page();
+            }
+        });
 
         buttonStaff.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,12 +46,22 @@ public class Register_option extends AppCompatActivity {
     }
 
     private void RegStaff() {
-        Intent intent = new Intent();
+        Intent intent = new Intent(this,Registration.class);
+        startActivity(intent);
+        finish();
     }
 
     private void RegStudent()
     {
         Intent intent = new Intent(this,Registration.class);
         startActivity(intent);
+        finish();
+    }
+
+    private void login_page()
+    {
+        Intent intent = new Intent(this,loginStudent.class);
+        startActivity(intent);
+        finish();
     }
 }

@@ -21,7 +21,7 @@ public class loginStudent extends AppCompatActivity {
 
     EditText loginUSN, loginPass;
     public String passIt;
-    TextView message;
+    TextView message,link;
     Button loginButton, registerButton;
     SharedPreferences sp;
     DatabaseReference databaseReference;
@@ -37,7 +37,8 @@ public class loginStudent extends AppCompatActivity {
         message = (TextView)findViewById(R.id.InvalidTextView);
 
         loginButton = (Button) findViewById(R.id.buttonLogin);
-        registerButton = (Button) findViewById(R.id.buttonReg);
+
+        link = (TextView)findViewById(R.id.textViewLink);
 
         databaseReference = FirebaseDatabase.getInstance().getReference("EduAcad_Database").child("stuInfo");
 
@@ -54,7 +55,7 @@ public class loginStudent extends AppCompatActivity {
             }
         });
 
-        registerButton.setOnClickListener(new View.OnClickListener() {
+        link.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 RegisterStudent();            }
@@ -123,4 +124,5 @@ public class loginStudent extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+
 }

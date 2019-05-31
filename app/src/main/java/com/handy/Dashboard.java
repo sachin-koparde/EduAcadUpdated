@@ -37,12 +37,18 @@ public class Dashboard extends Fragment implements View.OnClickListener {
     public void onClick(View v) {
         Fragment fragment = null;
         switch (v.getId()){
-            case R.id.cardsub1:fragment = new cardsub1(); break;
-            case R.id.cardsub2:fragment = new cardsub2(); break;
-            case R.id.cardsub3:fragment = new cardsub3(); break;
-            case R.id.cardsub4:fragment = new cardsub4(); break;
-            case R.id.cardsub5:fragment = new cardsub5(); break;
-            case R.id.cardsub6:fragment = new cardsub6(); break;
+            case R.id.cardsub1:fragment = new cardsub1();
+                               break;
+            case R.id.cardsub2:fragment = new cardsub2(); 
+                               break;
+            case R.id.cardsub3:fragment = new cardsub3(); 
+                                break;
+            case R.id.cardsub4:fragment = new cardsub4();
+                                break;
+            case R.id.cardsub5:fragment = new cardsub5();
+                                break;
+            case R.id.cardsub6:fragment = new cardsub6(); 
+                                break;
             default:  break;
         }
         FragmentManager manager = getFragmentManager();
